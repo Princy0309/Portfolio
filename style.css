@@ -316,6 +316,7 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn-project {
@@ -334,4 +335,15 @@ body {
 .btn-project:hover {
     background-color: #38bdf8;
     color: #0f0f0f;
+}
+
+/* Contact Section Styles */
+.contact-sec {
+    padding: 5rem 5% 7rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    max-width: 100%;
 }
