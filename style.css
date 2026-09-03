@@ -344,6 +344,60 @@ body {
     margin: 0 auto;
 }
 
-.contact-card {
-    max-width: 100%;
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease;
+}
+
+.contact-box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f3f4f6;
+}
+
+.contact-action {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #9ca3af;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-box:hover {
+    background-color: #1a1a1a;
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.12);
+}
+
+.contact-box:hover .contact-action {
+    color: #38bdf8;
+    transform: translateX(4px);
 }
