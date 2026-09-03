@@ -401,3 +401,27 @@ body {
     color: #38bdf8;
     transform: translateX(4px);
 }
+
+@media(max-width:768px){
+
+    .hero-content-wrapper{
+        flex-direction: column;
+        align-items: center;
+        text-alogn : center;
+    }
+
+    .hero-img-box{
+        width: 100%;
+        max-width: 260px;
+        height: 300px;
+    }
+
+    .project-grid,
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-chips{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
